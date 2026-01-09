@@ -1,0 +1,11 @@
+{
+  "version": "1",
+  "credential": {
+    "accessKey": "minioadmin",
+    "secretKey": "minioadmin123"
+  },
+  "region": "us-east-1",
+  "browser": "on",
+  "notify": {}
+}
+

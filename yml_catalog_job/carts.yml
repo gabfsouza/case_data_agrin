@@ -1,0 +1,48 @@
+source_type: api
+source: fakestoreapi
+schema: api-rest
+dominio: vendas
+sub_dominio: carrinhos
+table_name: carts
+table_description: Tabela que armazena carrinhos de compras.
+columns_description:
+ - column: id
+   description: Identificador único do carrinho de compras.
+   classification: NPC
+   confidentiality_level: INTERNAL
+   treatment: nan
+   data_type: int8
+   gov_check: true
+   primary_key: true
+ - column: userId
+   description: Identificador único do usuário que possui o carrinho.
+   classification: NPC
+   confidentiality_level: INTERNAL
+   treatment: nan
+   data_type: int8
+   gov_check: true
+   primary_key: false
+ - column: date
+   description: Data de criação do carrinho de compras.
+   classification: NPC
+   confidentiality_level: INTERNAL
+   treatment: nan
+   data_type: string
+   gov_check: true
+   primary_key: false
+ - column: products
+   description: Lista de produtos presentes no carrinho, contendo productId e quantity.
+   classification: NPC
+   confidentiality_level: INTERNAL
+   treatment: nan
+   data_type: array
+   gov_check: true
+   primary_key: false
+ - column: __v
+   description: Versão do documento (campo interno da API).
+   classification: NPC
+   confidentiality_level: INTERNAL
+   treatment: nan
+   data_type: int8
+   gov_check: true
+   primary_key: false

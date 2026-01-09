@@ -1,0 +1,64 @@
+source_type: api
+source: fakestoreapi
+schema: api-rest
+dominio: vendas
+sub_dominio: produtos
+table_name: products
+table_description: Tabela que armazena produtos.
+columns_description:
+ - column: id
+   description: Identificador único do produto.
+   classification: NPC
+   confidentiality_level: INTERNAL
+   treatment: nan
+   data_type: int4
+   gov_check: true
+   primary_key: true
+ - column: category
+   description: Categoria do produto.
+   classification: NPC
+   confidentiality_level: INTERNAL
+   treatment: nan
+   data_type: string
+   gov_check: true
+   primary_key: false
+ - column: description
+   description: Descrição do produto.
+   classification: NPC
+   confidentiality_level: INTERNAL
+   treatment: nan
+   data_type: string
+   gov_check: true
+   primary_key: false
+ - column: image
+   description: Imagem do produto.
+   classification: NPC
+   confidentiality_level: INTERNAL
+   treatment: nan
+   data_type: string
+   gov_check: true
+   primary_key: false
+ - column: price
+   description: Preço do produto.
+   classification: NPC
+   confidentiality_level: INTERNAL
+   treatment: nan
+   data_type: double
+   gov_check: true
+   primary_key: false
+ - column: rating
+   description: Avaliação do produto.
+   classification: NPC
+   confidentiality_level: INTERNAL
+   treatment: nan
+   data_type: struct
+   gov_check: true
+   primary_key: false
+ - column: title
+   description: Título do produto.
+   classification: NPC
+   confidentiality_level: INTERNAL
+   treatment: nan  
+   data_type: string
+   gov_check: true
+   primary_key: false
