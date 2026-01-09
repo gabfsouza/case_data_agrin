@@ -27,7 +27,7 @@ O pipeline processa dados de e-commerce através de três camadas distintas:
    - **Origem**: Dados processados do Silver
    - **Função**: Agregações e modelagem de indicadores de negócio
    - **Processamento**: Cálculo de métricas e KPIs
-   - **Destino**: SQLite local (`gold/gold.db`)
+   - **Destino**: Camada gold em parquet e SQLite local (`gold/gold.db`)
    - **Uso**: Análises e relatórios finais
 
 ### Orquestração com Prefect
@@ -57,7 +57,11 @@ O **Prefect** atua como o maestro da orquestração, garantindo que cada etapa s
    - MinIO será configurado automaticamente com bucket `datalake` e pastas `bronze`, `silver`, `gold`
    - Spark container estará pronto para processar jobs
 
-3. **Iniciar o orquestrador Prefect**:
+3 **Rodar comando requirements.txt local para garantir um ambiente adequado para o processo***
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Iniciar o orquestrador Prefect**:
    ```bash
    python orchestrator/apollo_flow_prefect.py
    ```

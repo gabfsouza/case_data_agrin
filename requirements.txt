@@ -1,0 +1,8 @@
+# Dependências do projeto
+pyspark>=3.5.0
+boto3>=1.28.0
+requests>=2.31.0
+PyYAML>=6.0
+pandas>=2.1.0
+pyarrow>=14.0.0
+prefect>=3.0.0
