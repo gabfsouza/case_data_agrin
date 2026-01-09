@@ -1,0 +1,16 @@
+source_type: api
+source: fakestoreapi
+schema: api-rest
+dominio: vendas
+sub_dominio: produtos
+table_name: categories
+table_description: Tabela que armazena as categorias de produtos disponíveis.
+columns_description:
+ - column: category
+   description: Nome da categoria de produto.
+   classification: NPC
+   confidentiality_level: INTERNAL
+   treatment: nan
+   data_type: string
+   gov_check: true
+   primary_key: true

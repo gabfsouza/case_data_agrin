@@ -1,0 +1,12 @@
+# Dockerfile para container de inicialização do MinIO
+FROM minio/mc:latest
+
+# Copia o script de inicialização
+COPY minio-init.sh /minio-init.sh
+
+# Torna o script executável
+RUN chmod +x /minio-init.sh
+
+# Define o script como entrypoint
+ENTRYPOINT ["/minio-init.sh"]
+
